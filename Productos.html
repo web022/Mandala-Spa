@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Mandala Spa</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Lobster", cursive; /* Fuente cursiva diferente */
+            background-color: #ffe6f2;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #d980a6, #9c4dcc);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .brand-name {
+            font-size: 1.5cm; /* Ajustado a 1.5cm */
+            font-weight: bold;
+            color: #777; /* Color difuminado de grises */
+            background: linear-gradient(to right, #e0e0e0, #b3b3b3); /* Efecto difuminado */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navbar .menu a {
+            text-decoration: none;
+            padding: 0.5rem 1rem; /* Tamaño ajustado */
+            font-size: 1.5rem; /* Tamaño de letra ajustado */
+            border-radius: 5px;
+            background-color: #b572a1;
+            color: #000;
+            border: 2px solid #000; /* Contorno negro */
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .navbar .menu a:hover {
+            background-color: #a05494;
+            transform: scale(1.05); /* Efecto de agrandamiento */
+        }
+
+        .logo-image {
+            display: flex;
+            justify-content: center;
+            margin: 3cm 0 1rem 0;
+        }
+
+        .logo-image img {
+            max-width: 400px; /* Agrandado a 20cm en total */
+            height: auto;
+            border-radius: 50%; /* Hacer la imagen circular */
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .carousel {
+            width: 60%; /* Ajustado a 100% */
+            max-width: 800px; /* Máximo ancho */
+            overflow: hidden;
+            margin-top: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .carousel-inner {
+            display: flex;
+            width: 800%;
+            animation: slide 20s infinite;
+        }
+
+        .carousel-inner img {
+            width: 12.5%; /* 8 imágenes, cada una ocupa 12.5% del ancho */
+            border-radius: 10px;
+            object-fit: cover; /* Asegurarse de que las imágenes se vean completas */
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            12.5% { transform: translateX(-12.5%); }
+            25% { transform: translateX(-25%); }
+            37.5% { transform: translateX(-37.5%); }
+            50% { transform: translateX(-50%); }
+            62.5% { transform: translateX(-62.5%); }
+            75% { transform: translateX(-75%); }
+            87.5% { transform: translateX(-87.5%); }
+            100% { transform: translateX(0); }
+        }
+
+        .carousel-text {
+            margin-top: 6cm; /* Texto 6cm debajo del carrusel */
+            text-align: center;
+            font-size: 1.5rem;
+            color: #333;
+            padding: 0 2rem; /* Añadir algo de padding lateral para mejor legibilidad */
+        }
+    </style>
+    <!-- Enlace para la fuente "Lobster" -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand-name">Mandala Spa</div>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Informacion.html">Información</a>
+        </nav>
+    </header>
+    <div class="logo-image">
+        <img src="imagenes/9.jpg" alt="Logo Mandala Spa" onerror="this.src='placeholder.png';">
+    </div>
+    <main class="content">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <img src="imagenes/1.jpg" alt="Producto 1">
+                <img src="imagenes/2.jpg" alt="Producto 2">
+                <img src="imagenes/3.jpg" alt="Producto 3">
+                <img src="imagenes/4.jpg" alt="Producto 4">
+                <img src="imagenes/5.jpg" alt="Producto 5">
+                <img src="imagenes/6.jpg" alt="Producto 6">
+                <img src="imagenes/7.jpg" alt="Producto 7">
+                <img src="imagenes/8.jpg" alt="Producto 8">
+            </div>
+        </div>
+        <div class="carousel-text">
+            Explora nuestros productos exclusivos y descubre el placer de un spa en casa con Mandala Spa.
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Mandala Spa</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Lobster", cursive; /* Fuente cursiva diferente */
+            background-color: #ffe6f2;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #d980a6, #9c4dcc);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .brand-name {
+            font-size: 1.5cm; /* Ajustado a 1.5cm */
+            font-weight: bold;
+            color: #777; /* Color difuminado de grises */
+            background: linear-gradient(to right, #e0e0e0, #b3b3b3); /* Efecto difuminado */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navbar .menu a {
+            text-decoration: none;
+            padding: 0.5rem 1rem; /* Tamaño ajustado */
+            font-size: 1.5rem; /* Tamaño de letra ajustado */
+            border-radius: 5px;
+            background-color: #b572a1;
+            color: #000;
+            border: 2px solid #000; /* Contorno negro */
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .navbar .menu a:hover {
+            background-color: #a05494;
+            transform: scale(1.05); /* Efecto de agrandamiento */
+        }
+
+        .logo-image {
+            display: flex;
+            justify-content: center;
+            margin: 3cm 0 1rem 0;
+        }
+
+        .logo-image img {
+            max-width: 400px; /* Agrandado a 20cm en total */
+            height: auto;
+            border-radius: 50%; /* Hacer la imagen circular */
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #9c4dcc;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            color: #333;
+            text-align: justify;
+        }
+
+        .buttons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            background-color: #25D366; /* Color de WhatsApp */
+            color: #fff;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .buttons a.facebook {
+            background-color: #3b5998; /* Color de Facebook */
+        }
+
+        .buttons a:hover {
+            transform: scale(1.05); /* Efecto de agrandamiento */
+        }
+    </style>
+    <!-- Enlace para la fuente "Lobster" -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand-name">Mandala Spa</div>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="informacion.html">Información</a>
+        </nav>
+    </header>
+    <div class="logo-image">
+        <img src="imagenes/9.jpg" alt="Logo Mandala Spa" onerror="this.src='placeholder.png';">
+    </div>
+    <main class="content">
+        <div class="section">
+            <h2>Quiénes Somos</h2>
+            <p>
+                Mandala Spa es un refugio de paz y relajación, dedicado a brindar experiencias únicas de bienestar a nuestros clientes. Nuestro equipo de profesionales está comprometido a ofrecer servicios excepcionales y productos de alta calidad que promuevan la salud y el bienestar.
+            </p>
+        </div>
+        <div class="section">
+            <h2>Nuestros Servicios</h2>
+            <p>
+                Ofrecemos una amplia gama de servicios, desde masajes terapéuticos hasta tratamientos faciales y corporales. Cada sesión está diseñada para proporcionar una experiencia personalizada, utilizando técnicas avanzadas y productos naturales que revitalizan el cuerpo y la mente.
+            </p>
+        </div>
+        <div class="section">
+            <h2>Contacto</h2>
+            <p>
+                Si tienes alguna pregunta o deseas reservar una cita, no dudes en contactarnos. Estamos ubicados en la Carrera 7B 13B 21 Casa7 Nueva Gerona Funza Cundinamarca, con instalaciones modernas y cómodas. Puedes llamarnos al 3112743572 o enviarnos un correo electrónico a edilmagg009@hotmail.com .
+            </p>
+        </div>
+        <div class="buttons">
+            <a href="https://wa.me/3112743572" target="_blank">Chat en WhatsApp</a>
+            <a href="https://www.facebook.com/profile.php?id=100064037830831" target="_blank" class="facebook">Página de Facebook</a>
+        </div>
+    </main>
+</body>
+</html>

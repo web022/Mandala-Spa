@@ -1,0 +1,101 @@
+<!-- Carrusel personalizado -->
+<div class="carrusel">
+  <div class="carrusel-imagenes">
+    <div class="carrusel-imagen">
+      <img src="..." alt="Primera imagen">
+    </div>
+    <div class="carrusel-imagen">
+      <img src="..." alt="Segunda imagen">
+    </div>
+    <div class="carrusel-imagen">
+      <img src="..." alt="Tercera imagen">
+    </div>
+  </div>
+  <button class="boton izquierda" aria-label="Anterior">&#8249;</button>
+  <button class="boton derecha" aria-label="Siguiente">&#8250;</button>
+</div>
+
+<style>
+  /* Variables para colores */
+  :root {
+      --color-principal: #ff7f7f;
+      --color-secundario: #d08cce;
+      --color-blanco: #fff;
+      --color-texto: #333;
+      --color-hover: #ffe4e4;
+      --color-detalle: #ffe6f0;
+  }
+
+  /* Carrusel */
+  .carrusel {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      height: 600px; /* Ajusta la altura según sea necesario */
+      margin: 40px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .carrusel-imagenes {
+      display: flex;
+      transition: transform 0.8s ease-in-out;
+      width: 100%;
+      height: 100%;
+  }
+
+  .carrusel-imagen {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+  }
+
+  .carrusel img {
+      width: auto; /* Ajusta para que las imágenes mantengan su proporción */
+      height: 100%;
+      object-fit: contain;
+      margin: 0 auto;
+  }
+
+  /* Botones de navegación */
+  .boton {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      color: var(--color-secundario);
+      border: none;
+      cursor: pointer;
+      padding: 15px 20px;
+      font-size: 24px;
+      z-index: 10;
+      border-radius: 50%;
+      transition: background-color 0.3s, color 0.3s;
+  }
+
+  .boton:hover {
+      background-color: var(--color-secundario);
+      color: var(--color-blanco);
+  }
+
+  .boton.izquierda {
+      left: 15px;
+  }
+
+  .boton.derecha {
+      right: 15px;
+  }
+
+  /* Media queries para dispositivos más pequeños */
+  @media (max-width: 768px) {
+      .carrusel {
+          height: 400px;
+      }
+
+      .boton {
+          font-size: 18px;
+          padding: 10px 15px;
+      }
+  }
+</style>
