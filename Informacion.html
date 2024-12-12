@@ -22,7 +22,7 @@
         }
 
         .navbar .brand-name {
-            font-size: 1.5cm; /* Ajustado a 1.5cm */
+            font-size: 1.5rem; /* Ajustado a 1.5rem */
             font-weight: bold;
             color: #777; /* Color difuminado de grises */
             background: linear-gradient(to right, #e0e0e0, #b3b3b3); /* Efecto difuminado */
@@ -37,8 +37,8 @@
 
         .navbar .menu a {
             text-decoration: none;
-            padding: 0.5rem 1rem; /* Tamaño ajustado */
-            font-size: 1.5rem; /* Tamaño de letra ajustado */
+            padding: 0.5rem 1rem;
+            font-size: 1rem; /* Tamaño de letra ajustado */
             border-radius: 5px;
             background-color: #b572a1;
             color: #000;
@@ -54,11 +54,11 @@
         .logo-image {
             display: flex;
             justify-content: center;
-            margin: 3cm 0 1rem 0;
+            margin: 3rem 0 1rem 0;
         }
 
         .logo-image img {
-            max-width: 400px; /* Agrandado a 20cm en total */
+            max-width: 100%; /* Agrandado a 100% del contenedor */
             height: auto;
             border-radius: 50%; /* Hacer la imagen circular */
         }
@@ -96,6 +96,8 @@
         .buttons {
             margin-top: 2rem;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             gap: 1rem;
         }
 
@@ -116,6 +118,33 @@
         .buttons a:hover {
             transform: scale(1.05); /* Efecto de agrandamiento */
         }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+            }
+
+            .navbar .brand-name {
+                font-size: 1.2rem; /* Ajustado a 1.2rem */
+            }
+
+            .navbar .menu {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .navbar .menu a {
+                font-size: 1rem; /* Tamaño de letra ajustado */
+                padding: 0.5rem;
+            }
+
+            .buttons a {
+                padding: 0.5rem 1rem; /* Tamaño ajustado */
+                font-size: 1rem; /* Tamaño de letra ajustado */
+            }
+        }
     </style>
     <!-- Enlace para la fuente "Lobster" -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -125,8 +154,8 @@
         <div class="brand-name">Mandala Spa</div>
         <nav class="menu">
             <a href="index.html">Inicio</a>
-            <a href="productos.html">Productos</a>
-            <a href="informacion.html">Información</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Informacion.html">Información</a>
         </nav>
     </header>
     <div class="logo-image">
@@ -148,7 +177,7 @@
         <div class="section">
             <h2>Contacto</h2>
             <p>
-                Si tienes alguna pregunta o deseas reservar una cita, no dudes en contactarnos. Estamos ubicados en la Carrera 7B 13B 21 Casa7 Nueva Gerona Funza Cundinamarca, con instalaciones modernas y cómodas. Puedes llamarnos al 3112743572 o enviarnos un correo electrónico a edilmagg009@hotmail.com .
+                Si tienes alguna pregunta o deseas reservar una cita, no dudes en contactarnos. Estamos ubicados en la Carrera 7B 13B 21 Casa7 Nueva Gerona Funza Cundinamarca, con instalaciones modernas y cómodas. Puedes llamarnos al 3112743572 o enviarnos un correo electrónico a edilmagg009@hotmail.com.
             </p>
         </div>
         <div class="buttons">

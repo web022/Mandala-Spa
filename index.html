@@ -19,17 +19,15 @@
             background: linear-gradient(to right, #d980a6, #9c4dcc);
             padding: 1rem 2rem;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            font-style: italic;
         }
 
         .navbar .brand-name {
-            font-size: 1.5cm; /* Ajustado a 1.5cm */
+            font-size: 1.5rem; /* Ajustado a 1.5rem */
             font-weight: bold;
             color: #777; /* Color difuminado de grises */
             background: linear-gradient(to right, #e0e0e0, #b3b3b3); /* Efecto difuminado */
             -webkit-background-clip: text;
             color: transparent;
-            padding: 0.1rem; /* Ajuste de padding */
         }
 
         .navbar .menu {
@@ -39,8 +37,8 @@
 
         .navbar .menu a {
             text-decoration: none;
-            padding: 1rem 1rem; /* Tamaño original */
-            font-size: 1.5rem; /* Tamaño de letra ajustado a tamaño pequeño */
+            padding: 0.5rem 1rem; /* Tamaño ajustado */
+            font-size: 1rem; /* Tamaño de letra ajustado */
             border-radius: 5px;
             background-color: #b572a1;
             color: #000;
@@ -56,11 +54,11 @@
         .logo-image {
             display: flex;
             justify-content: center;
-            margin: 3cm 0 1rem 0;
+            margin: 3rem 0 1rem 0; /* Ajustado para ser responsivo */
         }
 
         .logo-image img {
-            max-width: 400px; /* Agrandado 20cm en total (5cm más) */
+            max-width: 100%; /* Ajustado para ser responsivo */
             height: auto;
             border-radius: 50%; /* Hacer la imagen circular */
         }
@@ -69,7 +67,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: calc(100vh - 400px); /* Ajustado para incluir el logo más grande */
+            height: calc(100vh - 350px); /* Ajustado para ser responsivo */
+            padding: 1rem; /* Añadido padding para mejor visualización */
         }
 
         .card {
@@ -77,16 +76,47 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
+            width: 100%;
             max-width: 800px;
             text-align: center;
         }
 
         .card iframe {
             width: 100%;
-            height: 450px;
+            height: 315px; /* Ajustado para ser responsivo */
             border: none;
             border-radius: 5px;
+        }
+
+        /* Media Queries para Responsividad */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar .menu {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar .menu a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .logo-image {
+                margin: 1rem 0;
+            }
+
+            .content {
+                height: auto;
+                padding: 2rem 1rem;
+            }
+
+            .card {
+                padding: 1rem;
+            }
         }
     </style>
     <!-- Enlace para la fuente "Lobster" -->
@@ -111,9 +141,6 @@
     </main>
 </body>
 </html>
-
-
-
 
 
 
