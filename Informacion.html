@@ -14,7 +14,7 @@
 
         .navbar {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
             background: linear-gradient(to right, #d980a6, #9c4dcc);
             padding: 1rem 2rem;
@@ -28,11 +28,13 @@
             background: linear-gradient(to right, #e0e0e0, #b3b3b3);
             -webkit-background-clip: text;
             color: transparent;
+            margin-bottom: 20px; /* 2 cm de margen inferior */
         }
 
         .navbar .menu {
             display: flex;
             gap: 2rem;
+            justify-content: center;
         }
 
         .navbar .menu a {
@@ -80,12 +82,6 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .section h2 {
-            margin-bottom: 1rem;
-            font-size: 2rem;
-            color: #9c4dcc;
-        }
-
         .section p {
             margin-bottom: 1rem;
             font-size: 1.2rem;
@@ -120,12 +116,6 @@
         }
 
         @media (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-                padding: 1rem;
-            }
-
             .navbar .brand-name {
                 font-size: 1.5rem;
             }

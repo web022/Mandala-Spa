@@ -14,7 +14,7 @@
 
         .navbar {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
             background: linear-gradient(to right, #d980a6, #9c4dcc);
             padding: 1rem 2rem;
@@ -28,11 +28,13 @@
             background: linear-gradient(to right, #e0e0e0, #b3b3b3);
             -webkit-background-clip: text;
             color: transparent;
+            margin-bottom: 20px; /* 2 cm de margen inferior */
         }
 
         .navbar .menu {
             display: flex;
             gap: 2rem;
+            justify-content: center;
         }
 
         .navbar .menu a {
@@ -113,12 +115,6 @@
         }
 
         @media (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-                padding: 1rem;
-            }
-
             .navbar .brand-name {
                 font-size: 1.5rem;
             }
@@ -126,6 +122,7 @@
             .navbar .menu {
                 flex-direction: column;
                 gap: 0.5rem;
+                width: 100%;
             }
 
             .navbar .menu a {
@@ -140,37 +137,37 @@
             }
         }
     </style>
-<!-- Enlace para la fuente "Lobster" -->
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Enlace para la fuente "Lobster" -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="navbar">
-    <div class="brand-name">Mandala Spa</div>
-    <nav class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="Productos.html">Productos</a>
-        <a href="Informacion.html">Información</a>
-    </nav>
-</header>
-<div class="logo-image">
-    <img src="imagenes/9.jpg" alt="Logo Mandala Spa" onerror="this.src='placeholder.png';">
-</div>
-<main class="content">
-    <div class="carousel">
-        <div class="carousel-inner">
-            <img src="imagenes/1.jpg" alt="Producto 1">
-            <img src="imagenes/2.jpg" alt="Producto 2">
-            <img src="imagenes/3.jpg" alt="Producto 3">
-            <img src="imagenes/4.jpg" alt="Producto 4">
-            <img src="imagenes/5.jpg" alt="Producto 5">
-            <img src="imagenes/6.jpg" alt="Producto 6">
-            <img src="imagenes/7.jpg" alt="Producto 7">
-            <img src="imagenes/8.jpg" alt="Producto 8">
+    <header class="navbar">
+        <div class="brand-name">Mandala Spa</div>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Informacion.html">Información</a>
+        </nav>
+    </header>
+    <div class="logo-image">
+        <img src="imagenes/9.jpg" alt="Logo Mandala Spa" onerror="this.src='placeholder.png';">
+    </div>
+    <main class="content">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <img src="imagenes/1.jpg" alt="Producto 1">
+                <img src="imagenes/2.jpg" alt="Producto 2">
+                <img src="imagenes/3.jpg" alt="Producto 3">
+                <img src="imagenes/4.jpg" alt="Producto 4">
+                <img src="imagenes/5.jpg" alt="Producto 5">
+                <img src="imagenes/6.jpg" alt="Producto 6">
+                <img src="imagenes/7.jpg" alt="Producto 7">
+                <img src="imagenes/8.jpg" alt="Producto 8">
+            </div>
         </div>
-    </div>
-    <div class="carousel-text">
-        Explora nuestros productos exclusivos y descubre el placer de un spa en casa con Mandala Spa.
-    </div>
-</main>
+        <div class="carousel-text">
+            Explora nuestros productos exclusivos y descubre el placer de un spa en casa con Mandala Spa.
+        </div>
+    </main>
 </body>
 </html>

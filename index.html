@@ -14,7 +14,7 @@
 
         .navbar {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
             background: linear-gradient(to right, #d980a6, #9c4dcc);
             padding: 1rem 2rem;
@@ -28,11 +28,13 @@
             background: linear-gradient(to right, #e0e0e0, #b3b3b3);
             -webkit-background-clip: text;
             color: transparent;
+            margin-bottom: 20px; /* 2 cm de margen inferior */
         }
 
         .navbar .menu {
             display: flex;
             gap: 2rem;
+            justify-content: center;
         }
 
         .navbar .menu a {
@@ -90,17 +92,19 @@
 
         /* Media Queries para Responsividad */
         @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
+            .navbar .brand-name {
+                font-size: 1.5rem;
             }
 
             .navbar .menu {
                 flex-direction: column;
+                gap: 0.5rem;
                 width: 100%;
             }
 
             .navbar .menu a {
+                font-size: 1rem;
+                padding: 0.5rem;
                 width: 100%;
                 text-align: center;
             }
